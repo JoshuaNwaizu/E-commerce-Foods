@@ -218,7 +218,7 @@ img {
 .nav__buttons {
     display: flex;
     column-gap: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     color: var(--title-color);
     margin-inline: -1.5rem;
     align-items: center;
@@ -227,7 +227,7 @@ img {
 
 .scroll-header {
     background-color: var(--white-color);
-    box-shadow: 0 10px 4px hsla(0, 4%, 15%, .1);
+    box-shadow: var(--box-shadow);
     transition: .5s;
 }
 
@@ -235,9 +235,12 @@ img {
     background-color: var(--first-color);
     padding: .2rem .2rem;
     color: var(--white-color);
-    border-radius: .55rem;
+    border-radius: 1.55rem;
+    transition: .3s;
 }
-
+.contact__phone:hover {
+    transform: translateY(-.35rem);
+}
 /**Navigation for mobile devices */
 @media screen and (max-width: 950px) {
     .nav__menu {
@@ -283,6 +286,7 @@ img {
         position: relative;
         width: 32px;
         height: 32px;
+        transition: .3s;
     }
 
     .nav__burger,
@@ -295,6 +299,9 @@ img {
         cursor: pointer;
         transition: opacity .1s, transform .4s;
         inset: 0;
+    }
+    .nav__toggle:hover {
+        transform: translateY(-.35rem);
     }
 
     .nav__close {
@@ -437,6 +444,11 @@ img {
     box-shadow: 0 2px 16px #00000019;
     margin-left: .5rem;
     cursor: pointer;
+    transition: .3s;
+}
+
+.home__buttons .button__link:hover i {
+    box-shadow: 0 2px 20px #00000046;
 }
 
 .home__video {
@@ -544,6 +556,7 @@ img {
     border-radius: 1rem;
     z-index: -1;
     box-shadow: var(--box-shadow);
+    transition: .3s;
 }
 
 .image__card-img {
@@ -555,7 +568,7 @@ img {
     display: flex;
     margin-top: .5rem;
     flex-direction: column;
-    row-gap: .1rem;
+    row-gap: .4rem;
 }
 
 .image__card-title {
@@ -602,8 +615,8 @@ img {
 
 .popular__wrapper {
     background-color: var(--white-color);
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -685,7 +698,7 @@ img {
     font-size: var(--big-font-size);
     border-radius: .5rem;
     position: sticky;
-    top: 2rem;
+    top: 0;
     width: 50px;
     right: 21rem;
     padding: .3rem .5rem;
@@ -743,6 +756,7 @@ img {
     row-gap: 1rem;
 }
 
+
 .dish__title {
     font-size: var(--normal-font-size);
 }
@@ -783,6 +797,7 @@ img {
     justify-self: center;
     margin-top: -3rem;
 }
+
 .best__dishes-data {
     text-align: center;
 }
@@ -798,6 +813,7 @@ img {
     box-shadow: var(--box-shadow);
     margin-inline: 1rem;
 }
+
 /**swiper class */
 .swiper-button-prev::after,
 .swiper-button-next::after {
