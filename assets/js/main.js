@@ -119,7 +119,7 @@ openItem(browseAll, browseAllCon)
 closeItem(browseClose, browseAllCon)
 
 // SWIPER POPULAR SECTION 
-const popularSwiper = new Swiper('.best__dishes-content', {
+const popularSwiper = new Swiper('.best__dishes-content ', {
     // Optional parameters
     slidesPerView: 'auto',
     centeredSlides: true,
