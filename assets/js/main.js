@@ -131,7 +131,7 @@ const popularSwiper = new Swiper('.best__dishes-content ', {
     },
     breakpoints: {
         768: {
-            centeredSlides: false,
+            centeredSlides: true,
         }
     }
 });
