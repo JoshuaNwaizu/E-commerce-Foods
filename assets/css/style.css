@@ -351,6 +351,9 @@ img {
         width: 0;
     }
 
+    .contact__phone span {
+       display: none;
+    }
     .nav-list {
         background-color: var(--white-color);
         padding-top: 1rem;
@@ -1919,6 +1922,18 @@ img {
 
 /**For large devices */
 @media screen and (min-width: 951px) {
+    .contact__phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__phone span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        padding: .5rem;
+     }
 
     .nav {
         height: calc(var(--header-height) + 2rem);
@@ -2046,6 +2061,9 @@ img {
     .footer__container {
         margin-inline: 2rem;
     }
+    .services__container {
+        margin-top: 6rem;
+    }
 
     .testimonial__img {
         max-width: 400px;
@@ -2058,34 +2076,45 @@ img {
         max-width: 410px;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 1rem;
-        bottom: 1.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        background-color: var(--container-color);
-        padding: 5px;
-        font-size: 1.8rem;
-        border-radius: 50%;
-        color: var(--first-color);
-        box-shadow: var(--box-shadow);
-        transition: background .3s;
-    }
-    .swiper-button-prev {
-        left: calc(70% - .5rem);
-    }
-    
-    .swiper-button-next {
-        right: calc(20% - 2rem);
-        background-color: var(--first-color);
-        color: var(--white-color);
-    }
-
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
+    .nav {
+        height: calc(var(--header-height) + 2rem);
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 9rem;
+
+    }
+
+    .nav__toggle {
+        display: none;
+    }
     .container {
         margin-inline: auto;
+    }
+.image__card-blob {
+    top: -10rem;
+}
+    .home__container,
+    .testimonial__container {
+        display: grid;
+        column-gap: 6rem;
+        align-items: center;
+        justify-self: center;
+    }
+    .footer__content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+       row-gap: 8rem;
+        align-items: center;
+    }
+    .footer__data {
+        align-items: center;
+        justify-self: center;
+        margin-left: -3rem;
+    }
+    .footer {
+        padding-block: 3rem;
     }
 }
