@@ -52,10 +52,9 @@ function linkAction() {
     navMenu.classList.toggle('show-menu')
     toggle.classList.toggle('show-icon')
 }
-*/
-
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+*/
 
 //Close menu when ScrollY is less than 50
 function scrollNav() {
