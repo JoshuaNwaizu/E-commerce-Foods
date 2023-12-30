@@ -43,6 +43,7 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 // REMOVE MENU MOBILE
+/*
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -51,6 +52,7 @@ function linkAction() {
     navMenu.classList.toggle('show-menu')
     toggle.classList.toggle('show-icon')
 }
+*/
 
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
